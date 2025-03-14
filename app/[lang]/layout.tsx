@@ -1,10 +1,15 @@
 import React from "react";
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono, Noto_Sans_KR } from "next/font/google";
+import { dir } from "i18next";
 
-import "./globals.css";
+import { type Locale, locales } from "@/locales/options";
+import "../globals.css";
 
-type Props = Readonly<{ children: React.ReactNode }>;
+type Props = Readonly<{
+  children: React.ReactNode;
+  params: Promise<{ lang: Locale }>;
+}>;
 
 const inter = Inter({
   variable: "--font-inter",
@@ -18,6 +23,7 @@ const jetBrainsMono = JetBrains_Mono({
 
 const notoSansKR = Noto_Sans_KR({
   variable: "--font-noto-sans-kr",
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -25,9 +31,15 @@ export const metadata: Metadata = {
   description: "GitHub Repository Explorer with Multi-language Support",
 };
 
-export default function RootLayout({ children }: Props) {
+export async function generateStaticParams() {
+  return locales.map((lang) => ({ lang }));
+}
+
+export default async function RootLayout({ children, params }: Props) {
+  const { lang } = await params;
+
   return (
-    <html lang="en">
+    <html lang={lang} dir={dir(lang)}>
       <body
         className={`${inter.variable} ${jetBrainsMono.variable} ${notoSansKR.variable} antialiased`}
       >
