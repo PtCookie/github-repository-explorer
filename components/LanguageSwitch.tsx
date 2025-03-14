@@ -22,7 +22,11 @@ export default function LanguageSwitch({ lang }: Props) {
   };
 
   return (
-    <select value={lang} onChange={onLanguageChange}>
+    <select
+      value={lang}
+      onChange={onLanguageChange}
+      className="dark:bg-gray-800 dark:text-white"
+    >
       <option value="en">English</option>
       <option value="ko">한국어</option>
     </select>
