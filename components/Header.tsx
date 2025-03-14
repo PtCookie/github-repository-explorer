@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 
 import { initI18next } from "@/locales";
@@ -21,7 +22,6 @@ export default async function Header({ lang }: Props) {
         >
           {t("title")}
         </Link>
-
         <div className="flex items-center space-x-4">
           <LanguageSwitch lang={lang} />
           <ThemeSwitch />

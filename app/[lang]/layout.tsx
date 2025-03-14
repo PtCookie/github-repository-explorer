@@ -4,6 +4,7 @@ import { Inter, JetBrains_Mono, Noto_Sans_KR } from "next/font/google";
 import { dir } from "i18next";
 
 import { type Locale, locales } from "@/locales/options";
+import { TranslationProvider } from "@/components/TranslationProvider";
 import Header from "@/components/Header";
 import "../globals.css";
 
@@ -44,8 +45,10 @@ export default async function RootLayout({ children, params }: Props) {
       <body
         className={`${inter.variable} ${jetBrainsMono.variable} ${notoSansKR.variable} antialiased bg-white dark:bg-gray-800 min-h-screen`}
       >
-        <Header lang={lang} />
-        {children}
+        <TranslationProvider lang={lang}>
+          <Header lang={lang} />
+          {children}
+        </TranslationProvider>
       </body>
     </html>
   );
