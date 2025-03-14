@@ -4,6 +4,7 @@ import { Inter, JetBrains_Mono, Noto_Sans_KR } from "next/font/google";
 import { dir } from "i18next";
 
 import { type Locale, locales } from "@/locales/options";
+import Header from "@/components/Header";
 import "../globals.css";
 
 type Props = Readonly<{
@@ -41,8 +42,9 @@ export default async function RootLayout({ children, params }: Props) {
   return (
     <html lang={lang} dir={dir(lang)}>
       <body
-        className={`${inter.variable} ${jetBrainsMono.variable} ${notoSansKR.variable} antialiased`}
+        className={`${inter.variable} ${jetBrainsMono.variable} ${notoSansKR.variable} antialiased bg-white dark:bg-gray-800 min-h-screen`}
       >
+        <Header lang={lang} />
         {children}
       </body>
     </html>

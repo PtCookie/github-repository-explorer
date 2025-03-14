@@ -1,9 +1,11 @@
 {
   "ko": {
-    "test": "테스트"
+    "test": "테스트",
+    "title": "GitHub 저장소 검색기"
   },
 
   "en": {
-    "test": "test"
+    "test": "test",
+    "title": "GitHub Repository Explorer"
   }
 }
