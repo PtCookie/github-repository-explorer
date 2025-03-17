@@ -10,8 +10,8 @@ interface Repository {
     login: string;
     id: number;
     avatar_url: string;
-    html_url: string;
     gravatar_id: string;
+    html_url: string;
     type: string;
   };
   html_url: string;
