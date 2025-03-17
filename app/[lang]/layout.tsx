@@ -6,7 +6,7 @@ import { dir } from "i18next";
 import { locales } from "@/locales/options";
 import { QueryProvider } from "@/components/QueryProvider";
 import { TranslationProvider } from "@/components/TranslationProvider";
-import Header from "@/components/Header";
+import { Header } from "@/components/Header";
 import "../globals.css";
 
 type Props = Readonly<{
@@ -44,7 +44,7 @@ export default async function RootLayout({ children, params }: Props) {
   return (
     <html lang={lang} dir={dir(lang)}>
       <body
-        className={`${inter.variable} ${jetBrainsMono.variable} ${notoSansKR.variable} antialiased bg-white dark:bg-gray-800 min-h-screen`}
+        className={`${inter.variable} ${jetBrainsMono.variable} ${notoSansKR.variable} antialiased flex flex-col bg-white dark:bg-gray-800 min-h-screen`}
       >
         <QueryProvider>
           <TranslationProvider lang={lang}>

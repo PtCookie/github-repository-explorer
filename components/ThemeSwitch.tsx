@@ -3,7 +3,7 @@
 import React from "react";
 import { useTheme } from "@/hooks/useTheme";
 
-export default function ThemeSwitch() {
+export function ThemeSwitch() {
   const { theme, toggleTheme } = useTheme();
 
   return (

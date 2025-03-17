@@ -2,14 +2,14 @@ import React from "react";
 import Link from "next/link";
 
 import { initI18next } from "@/locales";
-import LanguageSwitch from "./LanguageSwitch";
-import ThemeSwitch from "./ThemeSwitch";
+import { LanguageSwitch } from "./LanguageSwitch";
+import { ThemeSwitch } from "./ThemeSwitch";
 
 type Props = {
   lang: Locale;
 };
 
-export default async function Header({ lang }: Props) {
+export async function Header({ lang }: Props) {
   const { t } = await initI18next(lang);
 
   return (

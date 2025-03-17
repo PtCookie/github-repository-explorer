@@ -7,7 +7,7 @@ type Props = {
   lang: Locale;
 };
 
-export default function LanguageSwitch({ lang }: Props) {
+export function LanguageSwitch({ lang }: Props) {
   const router = useRouter();
   const pathname = usePathname();
 

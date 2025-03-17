@@ -1,11 +1,13 @@
 {
   "ko": {
-    "test": "테스트",
-    "title": "GitHub 저장소 검색기"
+    "title": "GitHub 저장소 검색기",
+    "enterUsername": "GitHub 사용자명 입력",
+    "search": "검색"
   },
 
   "en": {
-    "test": "test",
-    "title": "GitHub Repository Explorer"
+    "title": "GitHub Repository Explorer",
+    "enterUsername": "Enter GitHub username",
+    "search": "Search"
   }
 }

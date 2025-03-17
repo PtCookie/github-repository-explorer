@@ -16,9 +16,9 @@ export async function initI18next(lng: string) {
     );
 
   await i18nInstance.init({
+    lng,
     supportedLngs: locales,
     fallbackLng: defaultLocale,
-    lng,
   });
 
   return i18nInstance;

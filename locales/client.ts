@@ -13,9 +13,12 @@ export function createI18next(lng: string) {
       ),
     )
     .init({
+      lng,
       supportedLngs: locales,
       fallbackLng: defaultLocale,
-      lng,
+      interpolation: {
+        escapeValue: false,
+      },
     });
 
   return i18n;
