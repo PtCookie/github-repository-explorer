@@ -1,7 +1,6 @@
 import React from "react";
 
 import { initI18next } from "@/locales";
-import type { Locale } from "@/locales/options";
 
 type Props = {
   params: Promise<{ lang: Locale }>;

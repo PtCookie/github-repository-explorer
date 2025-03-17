@@ -3,8 +3,6 @@
 import React from "react";
 import { usePathname, useRouter } from "next/navigation";
 
-import type { Locale } from "@/locales/options";
-
 type Props = {
   lang: Locale;
 };

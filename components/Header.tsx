@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 
 import { initI18next } from "@/locales";
-import type { Locale } from "@/locales/options";
 import LanguageSwitch from "./LanguageSwitch";
 import ThemeSwitch from "./ThemeSwitch";
 
