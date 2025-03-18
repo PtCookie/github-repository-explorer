@@ -8,7 +8,8 @@
     "sortBy": "정렬 기준",
     "lastUpdated": "최근 업데이트순",
     "mostStars": "별점 많은순",
-    "updated": "Updated"
+    "updated": "Updated",
+    "apiError": "저장소를 가져오는 중 오류가 발생했습니다. 다시 시도해주세요."
   },
 
   "en": {
@@ -20,6 +21,7 @@
     "sortBy": "Sort by",
     "lastUpdated": "Last updated",
     "mostStars": "Most stars",
-    "updated": "업데이트"
+    "updated": "업데이트",
+    "apiError": "Error fetching repositories. Please try again."
   }
 }

@@ -10,6 +10,7 @@ import { LanguageFilter } from "@/components/search/LanguageFilter";
 import { SortControl } from "@/components/search/SortControl";
 import { RepositoryList } from "@/components/repository/RepositoryList";
 import { RepositoryListSkeleton } from "@/components/skeleton/RepositoryList";
+import { ErrorDialog } from "@/components/ErrorDialog";
 
 export default function Home() {
   const [username, setUsername] = useState<string>("");
@@ -52,6 +53,7 @@ export default function Home() {
           <SortControl onSortChange={(sort) => updateSort(sort)} />
         </div>
       )}
+      {error && <ErrorDialog message={t("apiError")} />}
       {searchPerformed && !error && (
         <>
           {repositories.length === 0 && !loading ? (
