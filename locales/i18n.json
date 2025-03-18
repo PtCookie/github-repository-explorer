@@ -2,12 +2,24 @@
   "ko": {
     "title": "GitHub 저장소 검색기",
     "enterUsername": "GitHub 사용자명 입력",
-    "search": "검색"
+    "search": "검색",
+    "filterByLanguage": "언어별 필터",
+    "allLanguages": "모든 언어",
+    "sortBy": "정렬 기준",
+    "lastUpdated": "최근 업데이트순",
+    "mostStars": "별점 많은순",
+    "updated": "Updated"
   },
 
   "en": {
     "title": "GitHub Repository Explorer",
     "enterUsername": "Enter GitHub username",
-    "search": "Search"
+    "search": "Search",
+    "filterByLanguage": "Filter by language",
+    "allLanguages": "All languages",
+    "sortBy": "Sort by",
+    "lastUpdated": "Last updated",
+    "mostStars": "Most stars",
+    "updated": "업데이트"
   }
 }
