@@ -15,7 +15,12 @@ const compat = new FlatCompat({
 /** @type {import("eslint").Linter.Config[]} */
 const eslintConfig = [
   includeIgnoreFile(gitignorePath),
-  ...compat.extends("next/core-web-vitals", "next/typescript", "prettier"),
+  ...compat.extends(
+    "next/core-web-vitals",
+    "next/typescript",
+    "plugin:storybook/recommended",
+    "prettier",
+  ),
   ...pluginQuery.configs["flat/recommended"],
 ];
 
