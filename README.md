@@ -4,6 +4,8 @@ A web application that allows users to search for GitHub repositories by usernam
 
 This project implements a responsive, accessible interface with multi-language support and dark mode.
 
+[Live Demo](https://github-repository-explorer-khaki.vercel.app/)
+
 ## Features
 
 - Search for GitHub repositories by username
