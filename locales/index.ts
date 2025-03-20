@@ -11,7 +11,9 @@ export async function initI18next(lng: string) {
     .use(initReactI18next)
     .use(
       resourcesToBackend((language: string) =>
-        import(`./i18n.json`).then((module) => module[language]),
+        import(`./i18n.json`).then(
+          (module) => module.default[language as Locale],
+        ),
       ),
     );
 

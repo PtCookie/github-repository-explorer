@@ -13,7 +13,7 @@ export async function Header({ lang }: Props) {
   const { t } = await initI18next(lang);
 
   return (
-    <header className="bg-white dark:bg-gray-800 shadow">
+    <header className="bg-gray-200 dark:bg-gray-600 shadow">
       <div className="container mx-auto p-4 flex justify-between items-center">
         <Link
           href="/"

@@ -9,7 +9,7 @@ export function ThemeSwitch() {
   return (
     <button
       onClick={toggleTheme}
-      className="hover:bg-gray-200 dark:hover:bg-gray-600"
+      className="px-2 py-1 rounded-full hover:bg-gray-300 dark:hover:bg-gray-500"
     >
       {theme === "light" ? (
         <span className="text-xl">🌙</span>
